@@ -71,9 +71,9 @@
                             </li>
                             <li><a href="#apps-section">Apps</a></li>
                             <li><a href="#build-section">Build It</a></li>
+                              <li><a href="#contact-section">Contact</a></li>
 
 
-                            <li><a href="#contact-section">Contact</a></li>
                         </ul>
 
                     </div>
@@ -140,14 +140,6 @@
 
                     <li class="span3">
                         <h3 class="title"><i
-                                class="icon-pencil icon-small icon-inverse-80 icon-circle2"></i> Recommend and Rate
-                        </h3>
-
-                        <p>Recommend your favorite beers. Rate beers recommended by others.</p>
-                    </li>
-
-                    <li class="span3">
-                        <h3 class="title"><i
                                 class="icon-bolt icon-small icon-inverse-80 icon-circle2"></i> It's Alive!
                         </h3>
 
@@ -207,10 +199,6 @@
                 <h2 class="block-title"><span>Build It</span>
                 </h2>
 
-                <p>Obviously, you want to know how you can get KegMon to monitor your kegs. While we're working on
-                    providing a more detailed guide, here is a high-level list of what you need. Please
-                    <a href="#contact-section">contact us</a> with questions!</p>
-
                 <h3 class="block-title sub-title">What you need</h3>
                 <ul class="unstyled">
                     <li>
@@ -245,55 +233,12 @@
 
             <div class="row block">
 
-                <script>
-                    function submitForm(form) {
-
-                        if ($('input:checkbox', $(form)).is(':checked')) {
-                            $('textarea', $(form)).val($('textarea', $(form)).val() + '\r\nEMAIL UPDATES')
-                        }
-
-                        $.post("/app/publicUpdate/feedback", $(form).serialize()).done(function (data) {
-                            $('textarea', $(form)).val('');
-                            $('#modal-thanks').modal();
-
-                        });
-
-                        return false;
-                    }
-
-                </script>
+               
                 <div class="span6">
-                    <form method="POST" name="contact-form" onsubmit="return submitForm(this)"
-                          action="http://www.kegmon.com/app/publicUpdate/feedback">
-                        <input type="text" class="span5" placeholder="Name" name="name">
-                        <input type="email" class="span5" placeholder="Email" name="email">
-                        <textarea rows="6" class="span5" placeholder="Message" name="comments"></textarea>
-
-                        <label class="checkbox"><input type="checkbox" name="notify"> Send me email updates with KegMon
-                            news!
-                        </label>
-
-                        <input type="submit" class="btn btn-primary" value="Send Message">
-                    </form>
+                   Questions? Email <a href="mailto:admin@kegmon.com">admin@kegmon.com</a>.
                 </div>
 
-                <div class="span6">
-
-                    <p>Use this form if you have questions about KegMon or feedback for making it better, especially if
-                        you want to build your own!</p>
-
-                    <p>On FaceBook? You can visit the KegMon page <a target="_blank"
-                                                                     href="http://www.facebook.com/pages/KegMon/185528281502742">here</a>.
-                    </p>
-
-                    <p>
-
-                    <div class="fb-like" data-href="http://www.facebook.com/pages/KegMon/185528281502742"
-                         data-width="450" data-layout="standard" data-action="like" data-show-faces="true"
-                         data-share="true"></div>
-                </div>
-                </p>
-
+              
             </div>
 
         </section>
@@ -305,25 +250,6 @@
 
 </div>
 
-<div id="modal-thanks" class="modal hide fade in" style="display: none; ">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
-
-        <h3>Thanks!</h3>
-    </div>
-
-    <div class="modal-body">
-        <h4>Feedback received.</h4>
-
-        <p>Thanks for your question or feedback! We're always looking for suggestions for improving KegMon.</p>
-    </div>
-
-    <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">Close</a>
-    </div>
-</div>
-
-
 
 <footer id="footer">
     <div class="inner">
@@ -331,7 +257,7 @@
 
             <div class="row">
                 <div class="subfooter">
-                    <div class="span12"><p>Copyright 2014 &copy; Stephen Hendrix</p></div>
+                    <div class="span12"><p>Copyright 2017 &copy; Stephen Hendrix</p></div>
                 </div>
             </div>
         </div>
