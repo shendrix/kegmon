@@ -1,0 +1,82 @@
+
+#navigation {
+  /* 1. Navigation wrapper */
+    height:100px;
+
+}
+.navbar .nav > li > a {
+    color: #ffffff;
+}
+
+.navbar .nav > li > a:visited {
+    color: #ffffff;
+}
+
+body #navigation #main-menu {
+    margin-top:30px;
+}
+
+#highlighted {
+  /* 2. Highlighted (below header) wrapper */
+}
+#content {
+  /* 3. Content wrapper */
+}
+#content-below {
+  /* 4. Content Below wrapper */
+}
+#footer {
+  /* 5. Footer wrapper */
+    min-height:100px;
+}
+/*
+ * --------------------------------------------------
+ * 2. Colours
+ *-------------------------------------------------- 
+ */
+/*
+ * --------------------------------------------------
+ * 3. Responsiveness/media queries
+ *--------------------------------------------------
+ */
+@media (max-width: 979px) {
+  /* Navbar Collapsed (mobile) */
+}
+@media (min-width: 980px) {
+  /* Navbar Expanded (desktop) */
+}
+@media (min-width: 1200px) {
+  /* Responsive: Large desktop and up (wide) */
+}
+@media (max-width: 979px) {
+  /* Responsive: Mobile to desktop (common for all narrow devices) */
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Responsive: Tablet to desktop (normal) */
+}
+@media (max-width: 767px) {
+  /* Responsive: Landscape phone to desktop/tablet (narrow) */
+}
+@media (max-width: 480px) {
+  /* Responsive: Up to Landscape phone (mobile) */
+}
+/*
+ * --------------------------------------------------
+ * 4. Misc
+ * Other stuff
+ *--------------------------------------------------
+ */
+
+.icon-circle2 {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
+
+section {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+.flexslider img {
+    max-width:400px;
+}
